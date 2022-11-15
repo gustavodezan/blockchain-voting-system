@@ -10,9 +10,9 @@ Create a python decentralized voting system with blockchain in a p2p connection
 Python system developed with fastapi framework and data storage on deta
 
 ## How to use:
-- Install Deta CLI:
-\nLinux: `curl -fsSL https://get.deta.dev/cli.sh | sh`
-\nWindows: `iwr https://get.deta.dev/cli.ps1 -useb | iex`
+- Install Deta CLI:\
+Linux: `curl -fsSL https://get.deta.dev/cli.sh | sh`\
+Windows: `iwr https://get.deta.dev/cli.ps1 -useb | iex`
 
 - Create a new project on deta and save it's key
 
