@@ -18,8 +18,6 @@ Windows: `iwr https://get.deta.dev/cli.ps1 -useb | iex`
 
 - Create a file named: .env and save the key as: VOTING_DB_KEY={key}
 
-- Create a virtual env: `python -m venv env && ./env/Script/activate`
-
 - Install dependencies: `pip install -r requirements.txt`
 
 - Run it locally with: uvicorn main:app --reload
