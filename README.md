@@ -16,7 +16,9 @@ Python system developed with fastapi framework and data storage on deta
 
 - Create a new project on deta and save it's key
 
-- Create a file named: .env and save the key as: VOTING_DB_KEY=<key>
+- Create a file named: .env and save the key as: VOTING_DB_KEY={key}
+
+- Create a virtual env: `python -m venv env && ./env/Script/activate`
 
 - Install dependencies: `pip install -r requirements.txt`
 
