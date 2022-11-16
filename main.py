@@ -16,7 +16,7 @@ else:
         blockchain.chain.append(block)
 
 
-@app.get('/mine_block/{vote_id}')
+@app.get('/vote/{vote_id}')
 def mine_block(vote_id: str):
     previous_block = blockchain.print_previous_block()
     previous_proof = previous_block['proof']
@@ -56,3 +56,14 @@ def validate():
         return {'message': 'The blockchain is valid'}
     else:
         return {'message': 'Blockchain invalid!'}
+
+@app.get('/result')
+def get_result():
+    votes = blockchain.chain[1:]
+    result = {}
+    for vote in votes:
+        if vote['transaction_id'] in result:
+            result[vote['transaction_id']] += 1
+        else:
+            result[vote['transaction_id']] = 1
+    return result
