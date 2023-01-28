@@ -3,7 +3,7 @@
 ## Goal:
 Create a python decentralized voting system with blockchain in a p2p connection
 - [x] Blockchain
-- [X] Data storage
+- [x] Data storage
 - [ ] p2p connection
 
 ## Specifications:
@@ -26,5 +26,4 @@ Windows: `iwr https://get.deta.dev/cli.ps1 -useb | iex`
 It's possible to find the project openapi documentation on /docs
 
 ## Observations
-To simulate the blockchain with only one peer I'm using a client-server model, so I will not work on the p2p connection for that project, even tho it will lead into some miss implementations of blockchain fundamentals.  
-If I end up implementing p2p in the future I'll check the p2p connection box on `Goal` section and remove that comment
+To simulate the blockchain with only one peer I'm using a client-server model, so I will not work on the p2p connection for now, even tho it will lead into some miss implementations of blockchain fundamentals.  
