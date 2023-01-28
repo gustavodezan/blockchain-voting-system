@@ -13,7 +13,7 @@ class Blockchain:
         block = {
             'index': len(self.chain) + 1,
             'timestamp': str(datetime.now()),
-            'transaction_id': transaction_id,
+            'candidate_id': transaction_id,
             'proof': proof,
             'previous_hash':previous_hash
         }
